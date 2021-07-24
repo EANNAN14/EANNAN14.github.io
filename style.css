@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container_2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.btn {
+    height: 38px;
+    background: #8E00DC;
+    border:0;
+    color: #fff;
+    padding-left: 20px;
+    padding-right:20px;
+    font-weight: bold;
+}
+
+.dark {
+    background: #444040;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+/* HEADER */ 
+#main-header {
+    background: #2A282A ;
+    color: #fff;
+    min-height: 80px;
+    padding-top: 10px;
+    border-bottom: #8E00DC solid 5px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #main-logo {
+    float: left;
+    margin-top: 20px;
+}
+
+header #main-logo h1 {
+    margin: 0;
+}
+
+header nav {
+    margin-top: 20px;
+    float: right;
+}
+
+header .highlight, header .current a, footer .highlight, #bio .highlight {
+    color: #8E00DC;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+
+
+/* SHOWCASE */
+#showcase {
+    min-height: 400px;
+    background: url('../images/bg_5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#showcase h1 {
+    font-size: 3.5em;
+    line-height: 100px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+#showcase p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* NEWSLETTER */
+#newsletter {
+    padding: 15px;
+    background: #2A282A;
+    color: #fff;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+  }
+
+.btn:hover {
+    background: #9F0EEF;
+    border-color: #9F0EEF;
+    cursor: pointer;
+}
+
+/* BIO */
+#bio {
+    min-height: 600px;
+}
+
+#bio h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 0;
+    line-height: 1.2em;
+    display: block;
+    width: 200px
+}
+
+#bio hr {
+    width: 60px;
+    float: left;
+}
+
+#bio #main-bio .buffer, body .buffer {
+    clear: both;
+}
+
+#bio #main-bio {
+    float: left;
+    width: 50%;
+}
+
+
+#profile_photo {
+    float: right;
+    width: 50%;
+}
+
+#profile_photo img {
+    height: 650px;
+    width: 450px;
+}
+
+
+/* BOXES */
+#boxes {
+    margin-top: 60px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+
+/* FOOTER */
+#main-footer {
+    background: #2A282A;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* ARTICLE */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+}
+
+article#main_col {
+    float: left;
+    width: 65%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* SERVICES */
+#services li {
+    list-style: none;
+    background: #dcc7e7;
+    border: #c58ce4 solid 1px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width: 768px){
+    header #main-logo,
+    header nav,
+    header li,
+    #newsletter h1,
+    #newsletter form,
+    #bio hr,
+    #bio #main-bio,
+    #bio #main-bio h2,
+    #profile_photo,
+    #boxes .box,
+    aside#sidebar,
+    article#main_col
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 10px;
+    }
+
+    #newsletter button, .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
